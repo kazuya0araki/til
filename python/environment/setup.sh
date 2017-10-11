@@ -10,3 +10,6 @@ pip install requests requests_oauthlib
 pip install janome
 
 echo "end setup"
+
+# Decision_Tree
+brew install graphviz
