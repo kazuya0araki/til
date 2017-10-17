@@ -13,3 +13,6 @@ echo "end setup"
 
 # Decision_Tree
 brew install graphviz
+
+# Redshift
+pip install psycopg2
