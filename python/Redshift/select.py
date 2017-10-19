@@ -3,9 +3,17 @@
 
 
 import sys
+import time
 import psycopg2
 import yaml
 import csv
+
+
+# check sys.argv
+argv_count = len(sys.argv)
+if argv_count != 3:
+    print("Usage: # python %s connection_congig_filename sql_filename" % sys.argv[0])
+    quit()
 
 # read config
 yaml_f = open(sys.argv[1], "r+")
@@ -21,11 +29,20 @@ PASSWORD = CONFIG["password"]
 
 # SQL to CSV
 def select(sql_filename):
+    # start logging
+    start_time = time.time()
+    print("start execute sql.")
+
     # read SQL
     sql = open(sql_filename).read()
 
     # connect to Redshift
-    connection = psycopg2.connect("host=" + HOST + " port=" + PORT + " dbname=" + DBNAME + " user=" + USER + " password=" + PASSWORD)
+    connection = psycopg2.connect("host=" + HOST
+                                  + " port=" + PORT
+                                  + " dbname=" + DBNAME
+                                  + " user=" + USER
+                                  + " password=" + PASSWORD
+                                  )
 
     # execute SQL
     cur = connection.cursor()
@@ -42,7 +59,14 @@ def select(sql_filename):
     # close connection
     connection.close()
 
+    # end logging
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    print("end!")
+    print("elapsed time : {0}".format(elapsed_time) + "[sec]")
 
+
+# main
 def main():
     select(sys.argv[2])
 
