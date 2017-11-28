@@ -27,4 +27,4 @@ def search(url, keyword, count):
 
 
 if __name__ == '__main__':
-    search(config.URL_SEARCH, config.SEARCH_KEYWORD, 10)
+    search(config.URL_SEARCH, config.SEARCH_KEYWORD, 100)
