@@ -15,15 +15,15 @@ twitter = OAuth1Session(CK, CS, AT, ATS)
 
 # search
 def search(url, keyword, count):
-    params = {"q" : keyword, "count" : count}
-    request = twitter.get(url, params=params)
-    if request.status_code == 200:
-        search_result = json.loads(request.text)
-        fields = ["created_at", 'id', "text"]
+    params = {"q": keyword, "count": count}
+    response = twitter.get(url, params=params)
+    if response.status_code == 200:
+        search_result = json.loads(response.text)
+        fields = ["created_at", "id", "text"]
         df = pd.DataFrame(search_result["statuses"], columns=fields)
         df.to_csv("result.csv", index=False, quoting=csv.QUOTE_ALL, encoding="utf-8-sig")
     else:
-        print("ERROR: %d" % request.status_code)
+        print("ERROR: %d" % response.status_code)
 
 
 if __name__ == '__main__':
