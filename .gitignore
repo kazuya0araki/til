@@ -52,3 +52,13 @@ com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
 fabric.properties
+
+# Twitter API
+/python/TwitterAPI/config.py
+/python/TwitterAPI/result.csv
+
+# Redshft
+/python/Redshift/bizdatamart_config.yml
+/python/Redshift/candidate.sql
+/python/Redshift/output.csv
+
