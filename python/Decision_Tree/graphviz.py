@@ -8,6 +8,7 @@ from sklearn import tree
 
 def main():
     dataset = datasets.load_iris()
+    print(dataset)
 
     features = dataset.data
     targets = dataset.target
