@@ -8,5 +8,5 @@
 |column2|name|datatype|size|nn|
 |column3|name|datatype|size|nn|
 
-## ERD
+## Entity Relation Diagram
 ![ERD](../images/sample.png "sample.sql ERD")
