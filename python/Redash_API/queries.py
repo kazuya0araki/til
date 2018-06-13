@@ -21,7 +21,7 @@ def queries():
         # レスポンスからJSONを取得 & 正規化
         queries_result = json_normalize(json.loads(response.text))
         # JSONから取得対象のキーを抽出
-        fields = ["id", "name", "description", "created_at", "retrieved_at", "runtime", "user.name", "schedule", "is_archived", "is_draft"]
+        fields = ["id", "name", "description", "created_at", "retrieved_at", "runtime", "user.name", "schedule", "is_archived", "is_draft", "query"]
         # DataFrameにJSONデータを投入
         df = pd.DataFrame(queries_result, columns=fields)
         # idでソート
