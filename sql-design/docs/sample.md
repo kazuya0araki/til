@@ -2,11 +2,10 @@
 
 ## Difinition
 
-|aaa|bbb|ccc|ddd|eee|
+|column|name|datatype|size|nn|
 |---|---|---|---|---|
-|column1|name|datatype|size|nn|
-|column2|name|datatype|size|nn|
-|column3|name|datatype|size|nn|
+|column1|name1|char|10|true|
+|column2|name2|numeric|5, 0|true|
 
 ## Entity Relation Diagram
 ![ERD](../images/sample.png "sample.sql ERD")
