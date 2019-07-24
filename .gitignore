@@ -62,3 +62,5 @@ fabric.properties
 /python/Redshift/candidate.sql
 /python/Redshift/output.csv
 
+# bash/BigQuery
+/bash/BigQuery/result.tsv
