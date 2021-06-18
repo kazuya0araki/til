@@ -10,4 +10,4 @@
 ## Entity Relation Diagram
 ![ERD](../images/sample.png "sample.sql ERD")
 
-![sequence dialog](../uml/sample.pu)
+![sequence dialog](http://www.plantuml.com/plantuml/proxy?cache=no&src=../uml/sample.pu)
