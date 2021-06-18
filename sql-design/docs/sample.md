@@ -9,3 +9,5 @@
 
 ## Entity Relation Diagram
 ![ERD](../images/sample.png "sample.sql ERD")
+
+![sequence dialog](../uml/sample.pu)
