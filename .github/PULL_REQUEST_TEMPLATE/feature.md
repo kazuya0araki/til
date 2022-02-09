@@ -1,3 +1,3 @@
-## frature template
+## feature template
 
 hogehoge
