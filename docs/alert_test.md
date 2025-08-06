@@ -28,4 +28,9 @@ erDiagram
 ○○に注意してください。
 :::
 
+| 発生売上ID | 関連発生売上ID | 発生日 | 前工程件数 | 発生売上 |
+| :--- | :--- | :--- | ---: | ---: |
+| <span style="color: red">a1610000009XdYHAA0</span> | | 2014-03-20 | 1 | 50000 |
+| a1610000009XobfAAC | <span style="color: red">a1610000009XdYHAA0</span> | 2014-03-27 | -1 | -50000 |
+
 </details>
