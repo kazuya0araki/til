@@ -1,3 +1,5 @@
+#### 1. ある発生売上IDに対し、関連する発生売上IDのレコードを突合し、売上金額、前工程件数、後工程件数を足し合わせる。
+
 <details>
   <summary>開発者向け詳細設計</summary>
 
@@ -36,13 +38,15 @@ erDiagram
 | 発生売上ID | 関連発生売上ID | 発生日 | 前工程件数 | 発生売上 |
 | :--- | :--- | :--- | ---: | ---: |
 | $`\textcolor{red}{\text{a1610000009XdYHAA0}}`$ | | 2014-03-20 | 1 | 50000 |
+| $`\color{red}{a1610000009XdYHAA0}`$ | | 2014-03-20 | 1 | 50000 |
 | a1610000009XobfAAC | <span style="color: red">a1610000009XdYHAA0</span> | 2014-03-27 | -1 | -50000 |
-| $${\color{red}[abc\]\(https://google.fr)}$$ | <h1 style="color: red">text</h1> | | | |
 
-$`\textcolor{red}{\text{your text}}`$
 
-$${\color{red}[abc\]\(https://google.fr)}$$
-
-<h1 style="color: red">text</h1>
-
+[2. 上記対応後、前工程件数、発生売上の状態によって抽出する。](/til/docs/alert_test.md#2.+%E4%B8%8A%E8%A8%98%E5%AF%BE%E5%BF%9C%E5%BE%8C%E3%80%81%E5%89%8D%E5%B7%A5%E7%A8%8B%E4%BB%B6%E6%95%B0%E3%80%81%E7%99%BA%E7%94%9F%E5%A3%B2%E4%B8%8A%E3%81%AE%E7%8A%B6%E6%85%8B%E3%81%AB%E3%82%88%E3%81%A3%E3%81%A6%E6%8A%BD%E5%87%BA%E3%81%99%E3%82%8B%E3%80%82)参照。
 </details>
+
+
+
+#### 2. 上記対応後、前工程件数、発生売上の状態によって抽出する。
+
+aaa
