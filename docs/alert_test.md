@@ -30,6 +30,9 @@ erDiagram
 ○○に注意してください。
 :::
 
+> [!WARNING]
+> Critical content demanding immediate user attention due to potential risks.
+
 | 発生売上ID | 関連発生売上ID | 発生日 | 前工程件数 | 発生売上 |
 | :--- | :--- | :--- | ---: | ---: |
 | $`\textcolor{red}{\text{a1610000009XdYHAA0}}`$ | | 2014-03-20 | 1 | 50000 |
